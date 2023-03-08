@@ -1,0 +1,6 @@
+#!/bin/bash
+string SCHOOL School data file
+file -C -m school.magic
+SCHOOLThis is a sample School data file.
+file -m school.mgc sample.dat
+sample.dat: School data file

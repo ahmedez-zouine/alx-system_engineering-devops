@@ -2,10 +2,12 @@
 #This script playing "Best School" 10 time and add in last line "Hi"
 
 i=0
-while [ $i -lt 10 ]; do
-	echo "Best School"
-	if [ $i -eq 9 ]; then
-		echo -e "Hi\nBest School"
+while [ $i -lt 10 ]
+do
+	if [ $i -eq 9 ]
+	then
+		echo "Hi"
 	fi
-	((i++))
+	echo "Best School"
+	(( i++ ))
 done

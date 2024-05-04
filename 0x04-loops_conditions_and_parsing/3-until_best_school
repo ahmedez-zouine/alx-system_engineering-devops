@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
-# This Script displays the "Best School" 10 times
-count=0
-until [[ $count < 10 ]]; do  # Remove the semicolon here
+#Bash script that prints "Best School" 10 times.
+
+i=0
+until [ $i -eq 10 ]
+do
   echo "Best School"
-  ((count++))
+  i=$((i+1))
 done

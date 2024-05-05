@@ -1,4 +1,4 @@
-#!/usr/bin//env bash
+#!/usr/bin/env bash
 #This for using the print "I am invincible!!" if send SIGTERM
 
 while true; do

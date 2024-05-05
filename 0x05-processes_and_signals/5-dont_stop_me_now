@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+#This using for the SIGTERM for termibated in process in exection 
+
+id=$(ps aux | grep 4-to_infinity_and_beyond | grep bash | awk '{print $2}')
+
+if [[ -n "$id" ]]; then
+	kill -15 "$id"
+else
+	echo "Process Not found"
+fi
+

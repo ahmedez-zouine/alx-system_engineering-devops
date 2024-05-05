@@ -1,15 +1,9 @@
 #!/usr/bin//env bash
 #This for using the print "I am invincible!!" if send SIGTERM
 
-do_samething()
-{
-	echo "I am invincible!!!"
-}
-
-trap do_samething SIGTERM
-
 while true; do
 	echo "To infinity and beyond"
 	sleep 2
+	trap 'echo "I am invincible!!!"' SIGTERM
 done
 

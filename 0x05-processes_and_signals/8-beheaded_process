@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+#This Script Kill "7-highlander"
+
+id=$(pgrep -f 7-highlander)
+if [[ -n "$id" ]]; then
+	kill -9 "$id"
+else
+	echo "Process 7-highlander not found"
+fi

@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 #This Script will printf pid active 
 
-ps -e -o user,pid,%cpu,%mem,vsz,rss,tty,stat,start,time,command
+ps -auxf

@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+#This script like other script but i don't
+
+id=$(pgrep -f 4-to_infinity_and_beyond)
+
+if [[ -n "$id" ]]; then
+	kill -15 "$id"
+else
+	echo "4-to_infinity_and_beyond not found"
+fi

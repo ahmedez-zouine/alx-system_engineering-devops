@@ -2,5 +2,6 @@
 #This Script use for the print fille in cerrent d
 
 for filename in *; do
-	echo "$filename"
+	fileprint=$(echo "$filename" | cut -d'-' -f2)
+	echo "$fileprint"
 done
